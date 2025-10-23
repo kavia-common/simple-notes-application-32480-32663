@@ -1,8 +1,16 @@
-import Blits from '@lightningjs/blits'
 import App from './App.js'
+import Blits from '@lightningjs/blits'
 
+// Launch app with key mappings
 Blits.Launch(App, 'app', {
-  w: 1920,
-  h: 1080,
-  debugLevel: 1,
+  w: 1280,
+  h: 720,
+  keys: {
+    up: ['ArrowUp'],
+    down: ['ArrowDown'],
+    left: ['ArrowLeft'],
+    right: ['ArrowRight'],
+    enter: ['Enter'],
+    back: ['Escape']
+  }
 })
